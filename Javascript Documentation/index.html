@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Documentation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Javascript Documentation</h1>
+            <ul>
+                <a href="#Introduction">
+                    <li>Introduction</li>
+                </a>
+                <a href="#Basics">
+                    <li>Basics</li>
+                </a>
+                <a href="#Installation">
+                    <li>Installation</li>
+                </a>
+                <a href="#Hello_World">
+                    <li>Hello World</li>
+                </a>
+                <a href="#Variables">
+                    <li>Variables</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Introduction">
+            <h2>Introduction</h2>
+            <article>
+                <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.</p>
+                <p>What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.
+                    APIs are ready-made sets of code building blocks that allow a developer to implement programs that would otherwise be hard or impossible to implement. They do the same thing for programming that ready-made furniture kits do for home building — it is much easier to take ready-cut panels and screw them together to make a bookshelf than it is to work out the design yourself, go and find the correct wood, cut all the panels to the right size and shape, find the correct-sized screws, and then put them together to make a bookshelf.</p>
+                
+                </article>
+        </section>
+
+        <section id="Basics">
+            <h2>Basics</h2>
+            <article>
+                <p>
+                    Arrays, Conditionals, Operators, etc.
+                </p>
+            </article>
+        </section>
+
+        <section id="Installation">
+            <h2>Installation</h2>
+            <article>
+                <p>JavaScript is applied to your HTML page in a similar manner to CSS. Whereas CSS uses link elements to apply external stylesheets and style elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the script element.</p>
+            </article>
+        </section>
+
+        <section id="#Getting_Started">
+            <h2>Writing your first JavaScript program</h2>
+            <article>
+                <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:
+                </p>
+                <ul>
+                    <li type="circle">Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.</li>
+                    <li type="circle">Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the name variable to create the complete text label, e.g. "Player 1: Chris".</li>
+                    <li type="circle">Running code in response to certain events occurring on a web page. We used a click event in our example above to detect when the label is clicked and then run the code that updates the text label.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="Variables">
+            <h2>Variables</h2>
+            <article>
+                <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence.</p>
+                <code>
+                    const buttonA = document.querySelector('#button_A');
+                    const headingA = document.querySelector('#heading_A');
+
+                    buttonA.onclick = () => {
+                    const name = prompt('What is your name?');
+                    alert(`Hello ${name}, nice to see you!`);
+                    headingA.textContent = `Welcome ${name}`;
+                    }
+                </code>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
