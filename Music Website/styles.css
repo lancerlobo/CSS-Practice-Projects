@@ -64,6 +64,7 @@ button:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -262,17 +263,22 @@ nav ul li:hover {
     .gift-content h3, .gift-content .button{
         text-align: center;
     }
-    .footer-upper {
-        flex-direction: column;
-        gap: 10px;
-    }
     .ipad-iphone-img {
         /* to shift the img in between */
         position: relative;
-        top: 0;
+        top: 100px;
+        /* margin-top: -200px; */
         margin-top: 0;
     }
     .about-music {
         margin-top: -400px;
+    }
+    .footer-upper {
+        /* this is wrapped because, if there is less space it will go down to the next line */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-upper .footer-links {
+        min-width: 150px;
     }
 }
